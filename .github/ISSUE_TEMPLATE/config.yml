@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Discord
+    url: https://discord.gg/nfEW8tFJ3b
+    about: Questions, testing new builds, and talking about the mod.
+  - name: Troubleshooting
+    url: https://github.com/HaywireHayley/Marauders-PvE/blob/master/docs/TROUBLESHOOTING.md
+    about: The game won't start, getting back online, after a crash.

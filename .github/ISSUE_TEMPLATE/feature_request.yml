@@ -1,0 +1,21 @@
+name: Idea or request
+description: Something you'd like the mod to do, or do differently.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe it as a player would see it in game.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: What it would make better, or what's missing without it.
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: How the live game did it, screenshots, related issues.

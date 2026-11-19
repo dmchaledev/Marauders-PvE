@@ -1,0 +1,66 @@
+name: Bug or crash
+description: Something in the mod doesn't work, or the game crashed.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Before you start: check the [known issues](https://github.com/HaywireHayley/Marauders-PvE/issues?q=is%3Aissue+is%3Aopen+label%3Aknown-issue) and [troubleshooting](https://github.com/HaywireHayley/Marauders-PvE/blob/master/docs/TROUBLESHOOTING.md).
+
+        **The most useful thing you can attach** is the zip from the launcher's **REPORT** button (it takes your Windows user name, Steam ID and in-game name out). Please don't paste raw logs or crash files here: they can contain your account ID.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+      placeholder: My crew stayed behind at the airlock when I boarded the rival ship.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What were you doing?
+      description: Map, what you were doing just before, and whether it happens again if you try.
+      placeholder: |
+        1. Space_Alpha, docked at the Navy Outpost
+        2. Boarded a rival ship by pod
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: crash
+    attributes:
+      label: Did the game crash or freeze?
+      options:
+        - "No"
+        - "Yes, it crashed (closed or showed a crash window)"
+        - "Yes, it froze"
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - Windows
+        - Linux
+        - Steam Deck
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Mod build
+      description: The release you downloaded (e.g. `public-test-20261118.5`). The REPORT zip includes it too.
+  - type: textarea
+    id: report
+    attributes:
+      label: REPORT zip
+      description: Drag the zip from the launcher's REPORT button in here. On Linux without the launcher window, attach `backend/last_game.log` and `backend/server.log` after checking them.
+  - type: checkboxes
+    id: offline
+    attributes:
+      label: Offline only
+      options:
+        - label: This happened in the offline mod, not in the live game.
+          required: true

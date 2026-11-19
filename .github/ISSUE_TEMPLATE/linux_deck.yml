@@ -1,0 +1,44 @@
+name: Linux / Steam Deck report
+description: How the mod went on Linux or a Steam Deck, working or not.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Linux support is experimental. Reports that it **works** help as much as reports that it doesn't. General discussion is in [#127](https://github.com/HaywireHayley/Marauders-PvE/issues/127).
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Steam Deck (SteamOS)
+        - Desktop Linux
+    validations:
+      required: true
+  - type: input
+    id: proton
+    attributes:
+      label: Proton version
+      description: Steam → Marauders → Properties → Compatibility.
+  - type: dropdown
+    id: result
+    attributes:
+      label: How far did you get?
+      options:
+        - It works
+        - The game starts but something is wrong
+        - The game doesn't start
+        - install.sh failed
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What happened, and any Steam Input layout you set up for the mod's keys.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: The REPORT zip from the launcher window, or `backend/last_game.log` and `backend/server.log` (check them for your account ID first).
