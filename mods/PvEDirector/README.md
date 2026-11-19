@@ -1,7 +1,8 @@
 # PvEDirector: the mod that turns an offline raid into a PvE raid
 
 `Scripts/main.lua` is the director: settings (`CFG`), the per-frame tick, the half-second update, hooks and keys. Every
-system lives in its own module. Before changing a system, find its section in NOTES.md (search for the module's name).
+system lives in its own module. Before changing a system, find its section in the research log: [NOTES.md](../../NOTES.md)
+indexes every section by topic file (search it for the module's name).
 
 ## How a frame runs
 

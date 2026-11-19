@@ -3,7 +3,7 @@
 How a shot becomes an impact effect in the game, why the offline game left no bullet holes, and how the mod puts them
 back. Written 2026-11-18 on the branch `fix/bullet-impacts-and-particles`. The mod code is
 `mods/PvEDirector/Scripts/bulletholes.lua`, called every frame from `main.lua`. The reasoning and the dead ends are in the
-NOTES.md section "Bullet holes (2026-11-18)"; this file is the lookup for the chain and the record of the testing, so the
+section "Bullet holes (2026-11-18)" of [docs/notes/combat.md](../notes/combat.md); this file is the lookup for the chain and the record of the testing, so the
 next person does not have to probe the same system again.
 
 Every statement says where it came from:
@@ -58,8 +58,8 @@ flowchart TD
     E --> R["After ReturnToPoolTime<br/>bInUse goes back to false"]
 ```
 
-The gate at the top is the one the native patch "Bullet impact effects" in `pvepatch` removes (see NOTES.md, "Bullet impacts
-(fixed, pvepatch)"): with it removed, particles and sound work offline, and the pool is filled the way it is online. What was left
+The gate at the top is the one the native patch "Bullet impact effects" in `pvepatch` removes (see [combat.md](../notes/combat.md),
+"Bullet impacts (fixed, pvepatch)"): with it removed, particles and sound work offline, and the pool is filled the way it is online. What was left
 is the decal, which the pool actor does not have at all. (Bytecode, Measured)
 
 ## What the mod does
@@ -146,7 +146,7 @@ F3, tab "Effects". Saved with the rest of the tuning. The F9 debug menu also has
 | Metal got no hole at first | The first version assumed the game marked metal itself, which it only does in some places | Metal is stamped too |
 
 None of the testing hooked an engine static function (spawn, play, damage). Those froze or crashed the game twice during the
-explosion work (NOTES.md, "Space object explosions and sounds"), and this mod calls them and does not hook them.
+explosion work ([space.md](../notes/space.md), "Space object explosions and sounds"), and this mod calls them and does not hook them.
 
 ## How it was tested
 

@@ -114,7 +114,7 @@ flowchart TD
 | The burn loop | `Scripts/blowtorch.lua` (`frame(pc)`, called from the director's per-frame section in `main.lua`) |
 | Blowtorch in the F9 gun list | `Scripts/debuggive.lua` (`BlowTorch`, 250 charge) |
 | The decompiler used | `tools/offline-audit/kdis.py` |
-| Notes and test numbers | `NOTES.md`, "Blowtorch locks" |
+| Notes and test numbers | [`docs/notes/space.md`](../../docs/notes/space.md), "Blowtorch locks" |
 
 ## Trying it
 

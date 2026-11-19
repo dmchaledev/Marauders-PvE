@@ -35,7 +35,8 @@ PLAYING
   and tidies up. Keep the launcher open while you play.
 
   Saves:  as many as you like. Copy one before trying something risky, or use "Undo last raid" to go back to the
-          moment your last raid started. "Debug start" makes a save with a full stash and infinite money.
+          moment your last raid started. In NEW SAVE, tick "Start with lots of gear and infinite money" for a test
+          save with a full stash.
 
   CONTROLS (the game's own controls are unchanged; the mod adds these):
     F6        your crew: hire, dismiss, and choose who comes on raids (lobby and raids)
@@ -44,6 +45,8 @@ PLAYING
     N         minimap on or off (raids)
     M         minimap full overview, and back (raids)
     B         minimap: follow the next task (raids)
+    K         move the item under the mouse between your stash and your pockets or bags (lobby: LOADOUT, TRADE)
+    J         discard the item under the mouse, press twice (lobby: LOADOUT, TRADE)
     F2        play as a woman or a man (also a launcher setting)
     Left click  while flying with a crew gunner aboard: send them after the ship or space turret nearest the middle of
               your view. Click empty space to send them back to whoever is attacking you.
@@ -58,7 +61,8 @@ PLAYING
 
 LINUX AND STEAM DECK  (experimental: not yet tested under Proton, please report how it goes)
 --------------------
-  No launcher window on Linux: Steam's PLAY button starts the mod through a launch option (Game Mode works too).
+  Steam's PLAY button starts the mod through a launch option (Game Mode works too). The launcher window is optional
+  on Linux: install.sh adds it to your app menu if your Python has Tk and Pillow (SteamOS doesn't).
   1. Unzip this folder somewhere permanent (internal storage is safest; no non-English letters in the path).
   2. In a terminal, in this folder:   sh linux/install.sh
      It finds the game in your Steam libraries and prints a line for
@@ -88,21 +92,17 @@ KNOWN ISSUES
 ------------
   - Rarely, dark flat slabs hang in space on the solo maps.
   - Dead boarders' legs can stretch into odd poses.
-  - The status line can say "in space" while you're aboard another crew's ship.
-  - A short hitch when you first enter a station, and after a hitch, blue gaps can flash at the screen's corners.
   - Space_Solo_02 now and then finds no stations, so that raid has no station tasks.
-  - AI ships can get stuck on rocks or station hulls for a while.
-  - Some explosion effects and sounds, and some extraction prompts, are missing offline.
   - Soldiers on a station you haven't reached yet are asleep until you get close. This is on purpose, to save
     performance.
 
 
 REPORTING BUGS
 --------------
-  After the game has closed, please send:
-    backend\last_game.log    the mod's log from your last session
-    backend\server.log       the offline backend's log
-  and say what you were doing. A save that shows the problem (backend\saves\<name>) helps too.
+  After the game has closed, press REPORT in the launcher. It makes one zip on your Desktop with the logs, the crash
+  report if the game crashed, and your build number, with your Windows user name, Steam ID and in-game name taken out.
+  Post it on the Discord or in a GitHub issue (https://github.com/HaywireHayley/Marauders-PvE/issues/new/choose) and
+  say what you were doing. A save that shows the problem (backend\saves\<name>) helps too.
 
 
 TROUBLESHOOTING

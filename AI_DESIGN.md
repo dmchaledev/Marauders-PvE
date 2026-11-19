@@ -153,7 +153,7 @@ is shooting at me).
 6. Suppressive fire: can a RaidAIController shoot at a *location* (GOAP controllers have `ShootAtLocation`;
    alternatively a hidden dummy target)?
 
-## 5. Order of work (1 and 2 done 2026-10-31, see NOTES.md "Shared AI brain")
+## 5. Order of work (1 and 2 done 2026-10-31, see [docs/notes/ai.md](docs/notes/ai.md), "Shared AI brain")
 1. Engine checks above (one session, short tests).
 2. `ai.lua` skeleton: knowledge model, gain-sight vision, profiles; move rivals and soldiers onto it (same
    behaviour as today, but gradual spotting and difficulty).

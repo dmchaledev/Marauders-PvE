@@ -1,4 +1,4 @@
-# One-time setup of a dev checkout: the README's "Setting it up on your PC" steps 2, 4 and 5 in one go.
+# One-time setup of a dev checkout: docs/DEVELOPING.md's "Setting it up on your PC" step 3 in one go.
 #   powershell -NoProfile -ExecutionPolicy Bypass -File scripts\setup-dev.ps1 [-Research]
 # - Python packages from requirements.txt (with -Research also requirements-research.txt, for tools\).
 # - config\game_path.txt: kept if it points at the game, else found in your Steam libraries, else asked for.

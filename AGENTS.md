@@ -1,9 +1,10 @@
 # Guide for AI agents
 
-Start with [README.md](README.md) ("For developers": how it works, folder map, setup) and
-[CONTRIBUTING.md](CONTRIBUTING.md) (ground rules). [NOTES.md](NOTES.md) is the project's memory: before changing a
-system, search it for that system's section, and add what you learned to the section it belongs to (dated, with the
-issue number, what was verified and what wasn't).
+Start with [docs/DEVELOPING.md](docs/DEVELOPING.md) (how it works, folder map, setup) and
+[CONTRIBUTING.md](CONTRIBUTING.md) (ground rules). The research log is the project's memory: [NOTES.md](NOTES.md) indexes
+every section by title, and the sections live in one file per system under [docs/notes/](docs/notes/). Before changing a
+system, read its file there. Add what you learned as a new `##` section at the end of that file (dated, with the issue
+number, what was verified and what wasn't), and add its title to that file's Contents and to the NOTES.md index.
 
 ## Ground rules (from CONTRIBUTING.md, restated because they're the ones that matter most)
 - Offline only. Nothing here may touch live Marauders matches or servers.

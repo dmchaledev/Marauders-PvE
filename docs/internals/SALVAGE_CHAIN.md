@@ -4,7 +4,8 @@ How salvage works in the game from a wreck in space to loot in your hold and bac
 behaves offline, and everything that was read from the running game to find that out. Written 2026-11-18 while fixing
 issue 134 (salvage stuck behind a shut door) and the purge while docked bug. The mod code is `relaySalvage` and
 `guardPurgeWhileDocked` in `mods/PvEDirector/Scripts/space.lua`. The reasoning and dead ends are in the sections
-"Salvage in the hold stayed behind a shut door" and "Purging salvage while docked is refused" of [NOTES.md](../../NOTES.md);
+"Salvage in the hold stayed behind a shut door" and "Purging salvage while docked is refused" of
+[docs/notes/space.md](../notes/space.md);
 this file is the lookup for the chain itself.
 
 Every statement says where it came from:

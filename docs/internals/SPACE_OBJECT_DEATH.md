@@ -3,7 +3,8 @@
 What happens in the game when a space turret is destroyed or a space mine goes off, why nothing showed or sounded offline, how the
 mod puts it back, and how every part of that was found out. Written 2026-11-18 while fixing issue 15 (no explosion effects or sounds
 for mines, turrets and radar dishes). The mod code is `mods/PvEDirector/Scripts/spacefx.lua`, loaded from `Space.init` in
-`space.lua`. The reasoning is in the NOTES.md section "Space object explosions and sounds (2026-11-18, issue #15)"; the tools used to
+`space.lua`. The reasoning is in the section "Space object explosions and sounds (2026-11-18, issue #15)" of
+[docs/notes/space.md](../notes/space.md); the tools used to
 test it are in [tools/space_test](../../tools/space_test/README.md). This file is the lookup for the chain itself and the record of
 the testing, so the next person does not have to probe the same system again.
 
@@ -152,7 +153,7 @@ Which parts have been shown, by object:
 ## The probe
 
 The probe runner is `bridge/profile_on` present plus `bridge/dir_eval.lua`: the director runs the script once in the game's Lua
-state, writes what it returns to `bridge/dir_eval.out` and deletes the script (search NOTES.md for `bridge/profile_on`). Each effect
+state, writes what it returns to `bridge/dir_eval.out` and deletes the script (search [docs/notes/](../notes/) for `bridge/profile_on`). Each effect
 was made by hand like this, with a countdown so the tester is looking, and a note written to a file before each step so a crash shows
 where it stopped. This is the small mine version; the nuclear mine used the kind `Nuclear_NodeMine`, 60 m ahead and a 12 s delay.
 

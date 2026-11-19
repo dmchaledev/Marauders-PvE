@@ -3,7 +3,7 @@
 How a shot from you becomes damage on a bot in this mod, with every number that decides it: health, hit zone multipliers,
 armour ratings for every vest and helmet, base damage per gun, and the shotgun volley. Written 2026-11-18 for issue #123
 (`botdamage.lua`, `hitzones.lua`). The research log with the reasoning is the section "Your shots at bots" in
-[NOTES.md](../../NOTES.md); this file is the lookup table.
+[docs/notes/combat.md](../notes/combat.md); this file is the lookup table.
 
 Every number below says where it came from:
 
@@ -51,7 +51,7 @@ is 23 damage. Shot in the head by a soldier helmet with rating 7: `(34 minus 7) 
 | Soldier (BotPawn) | 80 | Game value |
 | Military (BotPawnMilitary) | 200 | Game value |
 | Guard (BotPawnGuard) | 200 | Logged hits (a guard was not in the world during the value dump) |
-| Rival and crew bodies | 100, crew plus 10 per level above 1 | Set by the mod (NOTES.md); the rival 100 was never seen in game |
+| Rival and crew bodies | 100, crew plus 10 per level above 1 | Set by the mod ([combat.md](../notes/combat.md), [crew.md](../notes/crew.md)); the rival 100 was never seen in game |
 | Test dummies | 100000, put back after every hit | Test setup only |
 
 ### Hit zones and multipliers

@@ -99,7 +99,7 @@ place is the world's origin.
 
 The method that made the fix safe: the blast and the sound made by hand, one at a time, asking the tester what they saw and heard,
 before any hook was written. It uses the probe runner (`bridge/profile_on` present, then `bridge/dir_eval.lua`, run once in the
-game's Lua state, its return value written to `bridge/dir_eval.out`: search NOTES.md for `bridge/profile_on`). The probe is in
+game's Lua state, its return value written to `bridge/dir_eval.out`: search `docs/notes/` for `bridge/profile_on`). The probe is in
 [SPACE_OBJECT_DEATH.md](../../docs/internals/SPACE_OBJECT_DEATH.md), "The probe". Rules that mattered:
 
 - Write a step note to a file before each effect that could crash, so the last line shows where the game died.

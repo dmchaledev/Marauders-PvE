@@ -87,4 +87,4 @@ flowchart TD
 3. Test without the game: `python tools/test_standin_gaps.py`. Then in game with a throwaway save: close the game first (the launcher stops the
    stand-in when the game closes) so PLAY starts it again with your change.
 
-More detail: NOTES.md, sections "Online backend" and "Backend capture".
+More detail: [docs/notes/backend.md](../docs/notes/backend.md), sections "Online backend" and "Backend capture".
